@@ -1,0 +1,7 @@
+conda activate yolov7
+cd C:\Users\Red Dragon\Desktop\Test\V2\yolov7-main
+python train.py --workers 1 --device 0 --batch-size 8 --epochs 150 --data data/data.yaml --img 640 640 --cfg cfg/training/yolov7-tiny.yaml --weights yolov7-tiny.pt --name yolov7finaly --hyp data/hyp.scratch.p5.yaml
+
+conda activate yolov7
+cd C:\Users\Red Dragon\Desktop\Test\V2\yolov7-main
+python detect.py --weights best.pt --conf 0.4 --img-size 640 --source 0 --view-img --no-trace

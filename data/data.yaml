@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 10
+names: ['Canada', 'China', 'Germany', 'India', 'Japan', 'Pakistan', 'Russia', 'South-Korea', 'United-Kingdom', 'United-States']
+
+roboflow:
+  workspace: avanti-nlyef
+  project: flags-0viie
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/avanti-nlyef/flags-0viie/dataset/2
